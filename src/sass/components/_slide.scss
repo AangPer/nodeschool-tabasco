@@ -1,0 +1,11 @@
+.slides {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 0%;
+    // max-width: 85vw;
+    height: 720px;
+    width: 1080px;
+    background-color: $color-primary;
+    z-index: -1000;
+  }
