@@ -3,9 +3,13 @@
 @import "layout/header";
 
 @import "base/base";
+@import "base/utilities";
 @import "base/typography";
+@import "base/animations";
 
 @import "components/slide";
+@import "components/button";
+@import "components/card";
 
 @import "pages/home";
 
@@ -14,19 +18,16 @@
 // @import "abstracts/mixins";
 // @import "abstracts/variables";
 
-// @import "base/animations";
 // @import "base/base";
 // @import "base/typography";
 // @import "base/utilities";
 
-// @import "components/button";
 // @import "components/composition";
 // @import "components/feature-box";
 // @import "components/form";
 // @import "components/story";
 // @import "components/bg-video";
 // @import "components/popup";
-// @import "components/card";
 
 // @import "layout/header";
 // @import "layout/grid";

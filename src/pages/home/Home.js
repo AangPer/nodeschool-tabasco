@@ -1,18 +1,19 @@
-import React from 'react';
-import logo from '../../assets/img/logo-NodeSchoolTabasco.png'
+import React, { Fragment } from 'react';
+import Header from '../../components/Header';
+import About from '../../components/About';
+import Events from '../../components/Events';
+import Mentors from '../../components/Mentors';
+import Contact from '../../components/Contact';
+
 function Home() {
   return (
-    <header className="header">
-      <div className="header__text-box">
-        <h1 className="heading-primary">
-          <span className="heading-primary--main">¡Asiste, aprende y comparte!</span>
-          <span className="heading-primary--sub">NodeSchoool es el lugar donde puedes conocer a la comunidad de developers en Tabasco.</span>
-        </h1>
-      </div>
-      <div className="header__logo-box">
-        <img src={logo} className="header__logo" srcset="" alt="Logo" />
-      </div>
-    </header>
+    <Fragment>
+      <Header />
+      <About />
+      <Events />
+      <Mentors />
+      <Contact />
+    </Fragment>
   );
 }
 

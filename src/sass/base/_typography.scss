@@ -1,27 +1,32 @@
+// Light
 @font-face {
   font-family: 'SpaceGrotesk';
   font-style: normal;
   font-weight: 300;
   src: url('../assets/fonts/SpaceGrotesk-Light.otf');
 }
+// Normal
 @font-face {
   font-family: 'SpaceGrotesk';
   font-style: normal;
   font-weight: 400;
   src: url('../assets/fonts/SpaceGrotesk-Regular.otf');
 }
+// Medium
 @font-face {
   font-family: 'SpaceGrotesk';
   font-style: normal;
   font-weight: 500;
   src: url('../assets/fonts/SpaceGrotesk-Medium.otf');
 }
+// Semibold
 @font-face {
   font-family: 'SpaceGrotesk';
   font-style: normal;
   font-weight: 600;
   src: url('../assets/fonts/SpaceGrotesk-SemiBold.otf');
 }
+// Bold
 @font-face {
   font-family: 'SpaceGrotesk';
   font-style: normal;
@@ -33,12 +38,11 @@ body {
   font-family: "SpaceGrotesk", sans-serif;
   font-weight: 400;
   // line-height: 1.7;
-  color: $color-white;
+  color: $color-black;
 }
 
 .heading-primary {
-  color: $color-black;
-  backface-visibility: hidden;
+  // backface-visibility: hidden;
   margin-bottom: 3rem;
 
   &--main {
@@ -55,4 +59,58 @@ body {
     margin-top: 2rem;
     line-height: 2rem;
   }
+}
+
+.heading-secondary {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+
+&--yellow {
+  color: $color-primary
+ 
+}
+
+&--white {
+  color: $color-white;
+}
+
+}
+.heading-tertiary {
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  transition: all .4s;
+  
+  &--main {
+    color: $color-primary;
+    font-size: 4rem;
+  }
+  
+  &--sub {
+    color: $color-white;
+    font-size: 3rem;
+}
+
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    font-size: 1.8rem;
+
+  &--yellow {
+    color: $color-primary
+  
+  }
+  
+  &--white {
+    color: $color-white;
+  }
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
 }

@@ -1,0 +1,31 @@
+.btn {
+  background-color: none;
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+
+    //Change for the <button> element
+     border:none;
+     cursor:pointer;
+  }
+
+  &:hover{
+    letter-spacing: .2em;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: $color-primary;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--yellow {
+    color: $color-primary;
+  }
+
+}

@@ -1,0 +1,41 @@
+.u-underline { 
+  text-decoration: underline; 
+  text-decoration-color: $color-primary;
+  background-image: linear-gradient(30deg, $color-primary 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 100% 0em;
+  background-position: 0 80%;
+  transition: all .4s;
+}
+
+.u-strong {
+  background-image: linear-gradient(30deg, $color-primary 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  background-position: 0;
+  transition: all .4s;
+}
+
+.u-align-center {
+  text-align: center;
+}
+
+.u-margin-bottom-huge { margin-bottom: 10rem !important; }
+.u-margin-bottom-big { margin-bottom: 8rem !important; }
+.u-margin-bottom-medium { margin-bottom: 4rem !important; }
+.u-margin-bottom-small { margin-bottom: 1rem !important; }
+
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-medium { margin-top: 4rem !important; }
+.u-margin-top-small { margin-top: 1rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }
+
+.u-medium{
+  font-weight: 500;
+}
+.u-semiBold{
+  font-weight: 600;
+}
+.u-bold{
+  font-weight: 700;
+}
