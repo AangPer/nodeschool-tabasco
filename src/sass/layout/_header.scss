@@ -46,7 +46,7 @@
       width: 100%;
       object-fit: cover;
       mix-blend-mode: darken;
-      transition: all 0.4s;
+      transition: $default-transition-time;
     }
   }
 }

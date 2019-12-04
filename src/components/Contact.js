@@ -23,13 +23,13 @@ const Contact = () => {
         <div className="contact contact__img-box">
           <img className="contact__img" src={logo} alt="" />
           <div className="contact__social-media u-margin-top-small">
-            <button className="contact__social-media__links">
+            <button className="btn btn__icon-link btn__icon-link--dark-white">
               <Twitter size={30} />
             </button>
-            <button className="contact__social-media__links">
+            <button className="btn btn__icon-link btn__icon-link--dark-white">
               <Facebook size={30} />
             </button>
-            <button className="contact__social-media__links">
+            <button className="btn btn__icon-link btn__icon-link--dark-white">
               <GitHub size={30} />
             </button>
           </div>

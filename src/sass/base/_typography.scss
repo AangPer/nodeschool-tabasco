@@ -77,13 +77,17 @@ body {
   color: $color-white;
 }
 
+&--dark {
+  color: $color-secondary;
+}
+
 }
 .heading-tertiary {
   display: block;
   margin-bottom: 2rem;
   font-weight: 700;
   line-height: 3rem;
-  transition: all .4s;
+  transition: $default-transition-time;
   
   &--main {
     color: $color-primary;

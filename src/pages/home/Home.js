@@ -4,6 +4,7 @@ import About from '../../components/About';
 import Events from '../../components/Events';
 import Mentors from '../../components/Mentors';
 import Contact from '../../components/Contact';
+import Footer from '../../components/Footer';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Events />
       <Mentors />
       <Contact />
+      <Footer />
     </Fragment>
   );
 }

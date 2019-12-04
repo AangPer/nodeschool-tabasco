@@ -1,10 +1,15 @@
 import React from 'react';
 import Foto from '../assets/img/photo-3.jpg';
+// import Foto from '../assets/img/mentor-giov.png';
+
 
 const EventCard = () => {
+  const imgBackground = {
+    backgroundImage: 'url(' + Foto + ')',
+  };
   return (
     <div className="card card__previous-event">
-      <img src={Foto} alt="" className="card__previous-event__img" />
+      <div className="card card__previous-event__img" style={imgBackground}></div>
       <div className="card card__previous-event__box-text">
         <h2 className="heading-tertiary heading-tertiary--main u-align-center">
           Git-It

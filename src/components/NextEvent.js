@@ -15,12 +15,11 @@ const NextEvent = () => {
         </span>
       </p>
       <p className="paragraph">
-        <span className="paragraph--yellow u-bold">¿Donde? </span><span className="paragraph--white">Galaxia Coworking Villahermosa, Mexico <a className="btn btn--yellow">[mapa]</a>
+        <span className="paragraph--yellow u-bold">¿Donde? </span><span className="paragraph--white">Galaxia Coworking Villahermosa, Mexico <button className="btn btn__link btn__link--yellow">[mapa]</button>
         </span>
       </p>
       <p className="paragraph">
-        <span className="paragraph--yellow u-bold">¿De que tratara? </span><span className="paragraph--white"> Learning, mentoring, javascript bffs, and pizza 🍕
-        </span>
+        <span className="paragraph--yellow u-bold">¿De que tratara? </span><span className="paragraph--white" role="img" aria-label="Subject">Learning, mentoring, javascript bffs, and pizza 🍕</span>
       </p>
     </div>
   )

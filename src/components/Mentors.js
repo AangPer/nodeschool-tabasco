@@ -1,7 +1,5 @@
 import React from 'react';
-import Foto from '../assets/img/mentor-giov.png';
 import MentorCard from './MentorCard';
-// import EventCard from './EventCard';
 
 
 const Mentors = () => {

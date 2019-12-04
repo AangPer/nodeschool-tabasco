@@ -1,31 +1,103 @@
 .btn {
-  background-color: none;
-  &,
-  &:link,
-  &:visited {
+    font-size: $default-font-size;
+    font-size: 1.8rem;
+    font-family: "SpaceGrotesk", sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.2s;
+    transition: $default-transition-time;
     position: relative;
+    cursor:pointer;
 
-    //Change for the <button> element
-     border:none;
-     cursor:pointer;
-  }
+&__link {
+   background-color: none;
+   background: none;
+    border:none;
 
+    &:focus {
+    outline: none;
+    outline-offset: none;
+}
+
+&:active {
+    font-weight: bold;
+    color: #0053ba;
+}
+ 
   &:hover{
     letter-spacing: .2em;
     font-weight: bold;
     font-size: 1.1em;
     color: $color-primary;
   }
-
   &--white {
     color: $color-white;
   }
-
+  
   &--yellow {
     color: $color-primary;
   }
-
 }
+
+&__icon-link {
+   background-color: none;
+   background: none;
+   border:none;
+   padding-left: .8rem;
+   padding-right: .8rem;
+
+    &:focus {
+    outline: none;
+    outline-offset: none;
+}
+
+&:active {
+    font-weight: bold;
+    color: #0053ba;
+}
+
+&:hover{
+       transform: scale(1.3);
+}
+  &--white {
+    color: $color-white;
+    &:hover{
+    color: $color-primary;
+  }
+  }
+  
+  &--yellow {
+    color: $color-primary;
+    &:hover{
+    color: $color-white;
+  }
+  }
+  &--dark {
+    color: $color-secondary;
+    &:hover{
+    color: $color-primary;
+  }
+}
+  &--dark-white {
+    color: $color-secondary;
+    &:hover{
+    color: $color-white;
+  }
+}
+}
+}
+// For style links
+//  &,
+//   &:link,
+//   &:visited {
+//     text-decoration: none;
+//     display: inline-block;
+//     transition: $default-transition-time;
+//     position: relative;
+
+//     //Change for the <button> element
+//      background: none!important;
+//      border:none;
+//      cursor:pointer;
+//   }

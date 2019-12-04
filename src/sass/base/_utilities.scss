@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100% 0em;
   background-position: 0 80%;
-  transition: all .4s;
+  transition:$default-transition-time;
 }
 
 .u-strong {
@@ -13,11 +13,17 @@
   background-repeat: no-repeat;
   background-size: 0 100%;
   background-position: 0;
-  transition: all .4s;
+  transition: $default-transition-time;
 }
 
 .u-align-center {
   text-align: center;
+}
+.u-width-80 {
+  width: 80% !important;
+}
+.u-width-60 {
+  width: 60% !important;
 }
 
 .u-margin-bottom-huge { margin-bottom: 10rem !important; }
