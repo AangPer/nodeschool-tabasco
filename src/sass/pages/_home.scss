@@ -1,11 +1,24 @@
 .section-about {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin-top: 200px;
   height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1110px;
+  max-height: 900px;
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 15;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+    // background-color: purple;
+  }
   
   &__console-box {
     display: flex;
@@ -44,8 +57,9 @@
 .section-events {
   display: flex;
   width: 100%;
-  background-color: #F7F7F7;
-  
+  background: #F7F7F7;
+  position: relative;
+
   &__wrapper{
     display: flex;
     justify-content: space-between;
@@ -96,7 +110,11 @@
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
+  max-height: 720px;
+  min-height: 500px;
   background-color: $color-secondary;
+  position: relative;
+
   
   &__wrapper{
     display: flex;
@@ -106,16 +124,18 @@
     margin-right: auto;
     max-width: 1110px;
     box-sizing: border-box;
-    background-color: $color-secondary;
+    z-index: 5;
   }
   
   &__box{
     display: flex;
-    width: 100%;
+    // width: 100%;
     overflow-x: scroll;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    z-index: 5;
+    // background-color: aqua;
   }
 }
 
@@ -168,7 +188,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: $color-secondary;
   
   &__wrapper{
@@ -207,8 +227,9 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
     &__box{
       display: flex;
@@ -251,5 +272,83 @@
       flex-direction: row;
       justify-content: space;
       align-items: center;
+    }
+  }
+
+  .parallaxHexagon{
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    
+    &__contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    max-width: 200px;
+    min-width: 150px;
+  }
+
+    &__contain--bunch{
+      max-width: 410px;
+      min-width: 310px;
+    }
+
+    &__img{
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    &--1{
+      top: 30%;
+      left: -6%;
+      z-index: -5;
+    }
+    
+    &--2{
+      top: 45%;
+      left: 30%;
+      // z-index: -50220;
+    }
+    
+    &--3{
+    top: -10.5%;
+    left: 23%;
+    }
+    
+    &--4{
+      top: 74.8%;
+      left: 6%;
+    }
+    
+    &--5{
+      top: 30%;
+      left: 50%;
+      z-index: -5;
+    }
+    
+    &--6{
+      top: 74.8%;
+      left: 80%;
+      z-index: -5;
+    }
+    
+    &--7{
+      top: 40%;
+      left: 0%;
+
+    }
+    
+    &--8{
+      top: 78%;
+      right: 30%;
+
+    }
+    
+    &--9{
+      top: 20%;
+      right: 0%;
     }
   }

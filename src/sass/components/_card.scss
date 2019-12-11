@@ -81,7 +81,11 @@
 
   &__mentor{
     width: 18rem;
+    max-width: 18rem;
+    min-width: 18rem;
     height: 24rem;
+    max-height: 24rem;
+    min-height: 24rem;
     margin-bottom: .8rem;
     margin-left: 8em;
     margin-right: .4rem;
@@ -92,7 +96,7 @@
       width: 100%;
       height: 100%;
       border-radius: .8rem;
-    overflow: hidden;
+      overflow: hidden;
     }
 
     &__img {

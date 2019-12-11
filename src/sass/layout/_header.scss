@@ -3,7 +3,10 @@
   justify-content: space-between;
   height: 100vh;
   position: relative;
-  // background-color: rgba(255, 99, 71, 0.493);
+  max-height: 900px;
+  min-height: 500px;
+  // background-color: rgba(0, 255, 255, 0.335);
+
   
   &__wrapper{
     margin-left: auto;

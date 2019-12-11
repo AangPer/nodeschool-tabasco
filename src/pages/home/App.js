@@ -1,9 +1,12 @@
 import React from 'react';
 import Home from './Home';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
-    <Home />
+    <ParallaxProvider>
+      <Home />
+    </ParallaxProvider>
   );
 }
 
