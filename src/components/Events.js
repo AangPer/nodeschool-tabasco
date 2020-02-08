@@ -4,7 +4,7 @@ import EventCard from './EventCard';
 import hexagon from '../assets/img/parallax-hexagon.svg';
 import { Parallax } from 'react-scroll-parallax';
 
-const Events = () => {
+const Events = (props) => {
   return (
     <section className="section-events">
       <div className="section-events__wrapper">
@@ -17,7 +17,7 @@ const Events = () => {
           <h2 className="heading-secondary u-align-center">
             Proximo evento
         </h2>
-          <NextEvent />
+          <NextEvent datos={props.dato} />
         </div>
         <div className="section-events__previous-events u-margin-top-big">
           <h2 className="heading-secondary u-align-center">
