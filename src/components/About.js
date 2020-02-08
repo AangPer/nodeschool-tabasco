@@ -13,7 +13,7 @@ const About = () => {
         </p>
       </div>
       <div className="section-about__console-box">
-        <img src={console} className="section-about__console" srcset="" alt="Logo" />
+        <img src={console} className="section-about__console" srcSet="" alt="Logo" />
       </div>
     </div>
   )

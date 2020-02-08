@@ -13,7 +13,7 @@ const Slide = () => {
           </h1>
         </div>
         <div className="header__logo-box">
-          <img src={logo} className="header__logo" srcset="" alt="Logo" />
+          <img src={logo} className="header__logo" srcSet="" alt="Logo" />
         </div>
       </div>
       <div className="header__slider">

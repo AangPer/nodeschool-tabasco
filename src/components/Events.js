@@ -2,7 +2,7 @@ import React from 'react';
 import NextEvent from './NextEvent';
 import EventCard from './EventCard';
 
-const Events = () => {
+const Events = (props) => {
   return (
     <section className="section-events">
       <div className="section-events__wrapper">
@@ -10,7 +10,7 @@ const Events = () => {
           <h2 className="heading-secondary u-align-center">
             Proximo evento
         </h2>
-          <NextEvent />
+          <NextEvent datos={props.dato} />
         </div>
         <div className="section-events__previous-events u-margin-top-big">
           <h2 className="heading-secondary u-align-center">
