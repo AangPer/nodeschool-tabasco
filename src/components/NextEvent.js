@@ -1,4 +1,6 @@
 import React from 'react';
+import Moment from 'react-moment';
+import 'moment/locale/es-us';
 
 const NextEvent = (props) => {
   let nombre = "";
@@ -19,12 +21,12 @@ const NextEvent = (props) => {
         {nombre}
         <span className="heading-secondary heading-secondary--yellow">
           {/* 20 de Octubre */}
-          {hora}
+          <Moment format="LL">{hora}</Moment>
         </span>
       </h2>
       {/* Los apartados siguientes deverian ser dinamicos y sacados de los eventos de facebook */}
       <p className="paragraph">
-        <span className="paragraph--yellow u-bold">¿Cuando? </span><span className="paragraph--white"> {hora}
+        <span className="paragraph--yellow u-bold">¿Cuando? </span><span className="paragraph--white"> <Moment locale="es-us" format = "LLLL">{hora}</Moment>
         </span>
       </p>
       <p className="paragraph">
