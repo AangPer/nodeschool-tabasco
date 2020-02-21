@@ -136,6 +136,12 @@
     justify-content: flex-start;
     z-index: 5;
     // background-color: aqua;
+    .card__mentor:last-child{
+      &::after{
+        right: -8em;
+        width:calc(100% + 16em);
+      }
+    }
   }
 }
 

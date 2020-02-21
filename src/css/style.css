@@ -401,6 +401,14 @@ body {
     .card__mentor:hover .heading-tertiary--main {
       transform: translateX(0);
       bottom: 0; }
+    .card__mentor::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(100% + 8em);
+      height: 100%;
+      display: inline-block; }
 
 .section-about {
   display: flex;
@@ -507,6 +515,9 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     z-index: 5; }
+    .section-mentors__box .card__mentor:last-child::after {
+      right: -8em;
+      width: calc(100% + 16em); }
 
 .section-contact {
   display: flex;

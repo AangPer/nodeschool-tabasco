@@ -164,5 +164,14 @@
       transform: translateX(0);
       bottom: 0;
     }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      right:0;
+      width:calc(100% + 8em);
+      height: 100%;
+      display: inline-block;
+    }
   }
 }
