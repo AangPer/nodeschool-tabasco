@@ -1,10 +1,11 @@
 import React from 'react';
-import Foto from '../assets/img/mentor-giov.png';
 import { GitHub, Twitter, Facebook } from 'react-feather';
+const img = require.context('../assets/img', true); // new context with require.context() for images route
 
-const MentorCard = () => {
+const MentorCard = ({name, lastName, photo}) => {
+  const imgsrc = img(`./${photo}`);
   const imgBackground = {
-    backgroundImage: 'url(' + Foto + ')',
+    backgroundImage: `url(${imgsrc})`,
   };
   return (
     <div className="card card__mentor">
@@ -13,10 +14,10 @@ const MentorCard = () => {
       </div>
       <div className="card card__mentor__box-text">
         <h2 className="heading-tertiary heading-tertiary--main u-margin-bottom-small">
-          Giovanni
+          {name}
           </h2>
         <h2 className="heading-tertiary heading-tertiary--main">
-          Ortiz
+          {lastName}
           </h2>
         <div className="card card__mentor__social-media">
           <button className="btn btn__icon-link btn__icon-link--yellow">

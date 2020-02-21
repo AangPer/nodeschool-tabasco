@@ -31,6 +31,18 @@ const token = 'EAAEzfaxtwAEBAMavYvuqEPgSMEa2LftE3kfYz6XV2o7RV0RDhN3yjBK1wTCyKy68
 //     })
 //   })
 // }
+
+const mentorList = [
+  {name: 'Giovanny', lastName: 'Ortiz', photo: 'mentor-giov.png'},
+  {name: 'Javier', lastName: 'Saviñon', photo: 'mentor-javier.jpg'},
+  {name: 'German', lastName: 'Juares con S', photo: 'mentor-german.jpeg'},
+  {name: 'Adrian', lastName: 'Valentin', photo: 'mentor-adrian.jpg'},
+  {name: 'Sergio', lastName: 'Sosa', photo: 'mentor-sergio.jpg'},
+  {name: 'José', lastName: 'Alejandro', photo: 'mentor-joseAl.jpg'},
+  {name: 'Miguel', lastName: 'Hernandez', photo: 'mentor-miguelAl.jpg'},
+];
+
+console.log(mentorList[2])
 class Home extends React.Component {
 
   constructor() {
@@ -71,31 +83,6 @@ class Home extends React.Component {
           console.log("Ya valiste verga")
         }
       });
-
-      // var pageAccessToken = `${pageId}|${token}`;
-      // FB.api('/me/events', {
-      //   access_token : pageAccessToken
-      // }).then((response) => {
-      //   if (response && !response.error) {
-      //     return response.json().then(console.log(`esta es lo que tiene ${response}`));
-      //   }else{
-      //     console.log("Ya valiste verga")
-      //   }
-      // })
-
-
-      // FB.api(
-      //   '/111589007019679/events',
-      //   {access_token : token},
-      //   function(response) {
-      //     if (response && !response.error) {
-      //           return response.then(console.warn(`esta es lo que tiene ${response}`));
-      //         }else{
-      //           console.warn("Ya valiste verga")
-      //         }
-      //   }
-      // );
-
     });
 
   }
@@ -105,15 +92,11 @@ class Home extends React.Component {
         <Header />
         <About />
         <Events dato={this.state.data} />
-        <Mentors />
+        <Mentors mentorList={mentorList}/>
         <Contact />
         <Footer />
       </Fragment>
     )
-    /*return (
-      <Fragment>
-        <Header />
-      </Fragment>)*/
   }
 }
 

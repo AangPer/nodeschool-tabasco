@@ -4,7 +4,17 @@ import hexagon from '../assets/img/parallax-hexagon.svg';
 import { Parallax } from 'react-scroll-parallax';
 
 
-const Mentors = () => {
+const Mentors = ({mentorList, selected}) => {
+const mapMentorsList = () => (
+  mentorList.map(mentor => {
+    const { name, lastName, photo } = mentor;
+    const onClick = () => console.log('original onClick ', name);
+    return (
+      <MentorCard name={name} lastName={lastName}
+      photo={photo} key={name} selected={selected} onClick={onClick} />
+    );
+  })
+);
   return (
     <section className="section-mentors">
       <div className="section-mentors__wrapper">
@@ -12,15 +22,7 @@ const Mentors = () => {
           Mentores
         </h2>
         <div className="section-mentors__box">
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
-          <MentorCard />
+        {mapMentorsList()}
         </div>
       </div>
       <Parallax y={[-20, 20]} tagOuter="div" tagInner="div" className="parallaxHexagon parallaxHexagon--3">
