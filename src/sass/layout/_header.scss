@@ -38,18 +38,44 @@
     position: absolute;
     top: 100px;
     right: 0%;
-    // max-width: 85vw;
-    height: 720px;
-    width: 1080px;
-    background-color: $color-primary;
+    // height: 72rem;
+    height: 95vh;
+    // width: 108rem;
+    width: 66vw;
+    // mix-blend-mode: darken;
     z-index: -1000;
+    // background-color: $color-primary;
+    // animation: chamaleon 30s infinite;
     overflow: hidden;
     
     &__img {
       width: 100%;
-      object-fit: cover;
-      mix-blend-mode: darken;
-      transition: $default-transition-time;
+      background-blend-mode: darken;
+      background-image: linear-gradient($color-primary, $color-primary), url('../assets/img/slide-1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation-name: example;
+      animation-timing-function: linear;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+
+      // &::before{
+      // content: '';
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // width: 100%;
+      // height: 100%;
+      // background-blend-mode: darken;
+      // background-image: linear-gradient($color-primary, $color-primary), url('../assets/img/slide-1.jpg');
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // animation-name: example;
+      // animation-timing-function: linear;
+      // animation-duration: 20s;
+      // // animation-delay: 1s;
+      // animation-iteration-count: infinite;
+      // }
     }
   }
 }

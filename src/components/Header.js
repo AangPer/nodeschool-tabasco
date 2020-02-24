@@ -23,7 +23,7 @@ const Slide = () => {
       </div>
       {/* <Parallax className="header__slider" y={[-20, 30]} tagOuter="figure"> */}
       <div className="header__slider">
-        <img src={Foto} alt="" className="header__slider__img" />
+        <div className="header__slider__img" />
       </div>
       {/* </Parallax> */}
     </header>

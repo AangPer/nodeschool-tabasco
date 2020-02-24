@@ -97,7 +97,8 @@
     overflow: -moz-scrollbars-none;
     flex-wrap: wrap;
      -ms-overflow-style: none;
-
+     scrollbar-color: transparent transparent; /* thumb and track color */
+     scrollbar-width: thin;
     &::-webkit-scrollbar {
   display: none;
 }
@@ -135,7 +136,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     z-index: 5;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: thin;
     // background-color: aqua;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
     .card__mentor:last-child{
       &::after{
         right: -8em;

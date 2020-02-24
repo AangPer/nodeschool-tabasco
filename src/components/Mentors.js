@@ -2,16 +2,18 @@ import React from 'react';
 import MentorCard from './MentorCard';
 import hexagon from '../assets/img/parallax-hexagon.svg';
 import { Parallax } from 'react-scroll-parallax';
+import { useState } from 'react';
+import useHorizontal from '@oberon-amsterdam/horizontal/hook';
 
-
-const Mentors = ({mentorList, selected}) => {
+const Mentors = ({mentorList}) => {
+const [container, setContainer] = useState();
+useHorizontal({ container: container });
 const mapMentorsList = () => (
   mentorList.map(mentor => {
     const { name, lastName, photo } = mentor;
-    const onClick = () => console.log('original onClick ', name);
     return (
       <MentorCard name={name} lastName={lastName}
-      photo={photo} key={name} selected={selected} onClick={onClick} />
+      photo={photo} key={name}/>
     );
   })
 );
@@ -21,7 +23,7 @@ const mapMentorsList = () => (
         <h2 className="heading-secondary heading-secondary--white u-align-center u-margin-top-big u-margin-bottom-big">
           Mentores
         </h2>
-        <div className="section-mentors__box">
+        <div className="section-mentors__box container" ref={ref => { setContainer(ref); }}>
         {mapMentorsList()}
         </div>
       </div>

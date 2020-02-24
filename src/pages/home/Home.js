@@ -45,11 +45,13 @@ const mentorList = [
 console.log(mentorList[2])
 class Home extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       data: []
     }
+    // this.menu = null;
+    // this.menuItems = Mentors(mentorList.slice(0, mentorList.length), this.state.selected);
   }
 
 
